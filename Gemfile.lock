@@ -109,6 +109,9 @@ GEM
     erubi (1.13.1)
     et-orbi (1.4.0)
       tzinfo
+    fabrication (2.31.0)
+    faker (3.5.2)
+      i18n (>= 1.8.11, < 2)
     fugit (1.12.1)
       et-orbi (~> 1.4)
       raabro (~> 1.4)
@@ -389,6 +392,8 @@ DEPENDENCIES
   brakeman
   capybara
   debug
+  fabrication
+  faker
   importmap-rails
   jbuilder
   kamal
