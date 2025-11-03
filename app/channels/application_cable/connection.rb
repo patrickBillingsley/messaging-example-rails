@@ -1,19 +1,11 @@
 module ApplicationCable
   class Connection < ActionCable::Connection::Base
-    # identified_by :current_user
-
     def connect
-      puts "Connecting..."
-      # self.current_user = find_verified_user
+      puts "Action Cable Connecting..."
     end
 
-    private
-    # def find_verified_user
-    #   if verified_user = User.find_by(id: params[:user_id])
-    #     verified_user
-    #   else
-    #     reject_unauthorized_connection
-    #   end
-    # end
+    def disconnect
+      puts "Action Cable Disconnecting..."
+    end
   end
 end
